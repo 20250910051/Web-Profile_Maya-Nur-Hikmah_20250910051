@@ -1,0 +1,241 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5D1EF;
+    color: #6B4A6E;
+    margin: 0;
+    padding: 70px 20px 20px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFB4DA;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+}
+
+.navbar a {
+    color: darkmagenta;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #FFF8E9;
+}
+
+.header {
+    background-color: #FFB4DA;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    animation: muncul 1s ease;
+}
+
+.header h1 {
+    color: darkmagenta;
+    margin: 0;
+}
+
+.header p {
+    margin: 5px 0 0;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header,
+article {
+    scroll-margin-top: 70px;
+}
+
+article {
+    background-color: #FFF8E9;
+    padding: 15px;
+    margin-top: 20px;
+    border: 3px solid #FFB4DA;
+    border-radius: 15px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    border-color: #BCD3F9;
+}
+
+h2 {
+    background-color: #BCD3F9;
+    color: darkmagenta;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+h3 {
+    color: darkmagenta;
+    margin-top: 0;
+}
+
+.tentang {
+    display: flex;
+    align-items: center;
+}
+
+.teks-tentang {
+    text-align: justify;
+}
+
+.foto {
+    width: 150px;
+    border: 5px solid #FFB4DA;
+    border-radius: 15px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #FFCBBF;
+    color: darkmagenta;
+    padding: 8px;
+    border: 1px solid #FFB4DA;
+}
+
+td {
+    background-color: #FFF4FD;
+    padding: 8px;
+    border: 1px solid #FFB4DA;
+    transition: background-color 0.3s;
+}
+
+tr:hover td {
+    background-color: #FFCBBF;
+}
+
+.chip {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chip li {
+    background-color: #BCD3F9;
+    color: darkmagenta;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.chip li:hover {
+    background-color: #FFCBBF;
+    transform: scale(1.1);
+}
+
+.karya {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.kartu {
+    background-color: #FFF4FD;
+    border: 2px solid #FFB4DA;
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.kartu:hover {
+    background-color: #FFCBBF;
+    transform: translateY(-5px);
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #FFB4DA;
+    color: darkmagenta;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tombol:hover {
+    background-color: #BCD3F9;
+    transform: translateY(-3px);
+}
+
+.footer {
+    background-color: #FFB4DA;
+    color: darkmagenta;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.ke-atas {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFB4DA;
+    color: darkmagenta;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.ke-atas:hover {
+    background-color: #BCD3F9;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 110px;
+    }
+
+    .header,
+    article {
+        scroll-margin-top: 110px;
+    }
+
+    .tentang {
+        flex-direction: column;
+    }
+
+    .foto {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
